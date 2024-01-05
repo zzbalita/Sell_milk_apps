@@ -38,7 +38,7 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
     public void openMain(){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(SignInActivity.this, HomeActivity.class);
         startActivity(intent);
     }
 

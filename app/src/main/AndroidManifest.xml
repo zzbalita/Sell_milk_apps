@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,17 +21,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MilkTeaShop"
         tools:targetApi="31">
+
         <activity
             android:name=".splash.ui.SplashActivity"
-            android:exported="true">
+            android:banner="@drawable/app_icon_your_company"
+            android:exported="true"
+            android:icon="@drawable/app_icon_your_company"
+            android:label="@string/title_activity_home"
+            android:logo="@drawable/app_icon_your_company"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".authorization.ui.SignInActivity"></activity>
+        <activity android:name=".authorization.ui.SignInActivity" />
+        <activity android:name=".home.ui.HomeActivity" />
+        <activity
+            android:name=".store.ui.StoreDetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

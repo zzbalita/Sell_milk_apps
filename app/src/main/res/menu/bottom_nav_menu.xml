@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navigation_store"
         android:icon="@drawable/ic_store"
-        android:title="@strings/title_store" />
+        android:title="@string/app_name" />
 
     <item
         android:id="@+id/navigation_order"
         android:icon="@drawable/ic_order"
-        android:title="@strings/title_order" />
+        android:title="@string/app_name" />
 
     <item
         android:id="@+id/navigation_cart"
         android:icon="@drawable/ic_cart"
-        android:title="@strings/title_cart" />
+        android:title="@string/app_name" />
 
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/ic_account"
-        android:title="@strings/title_account" />
+        android:title="@string/app_name" />
 
 </menu>
